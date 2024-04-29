@@ -2,8 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db';
 import projectRoutes from './routes/projectRoutes'
-import housePromotionRouter from './routes/housePromotionRoutes'
-import apartmentPromotionRouter from './routes/apartmentPromotionRoutes'
+import housePromotionRoutes from './routes/housePromotionRoutes'
+import apartmentPromotionRoutes from './routes/apartmentPromotionRoutes'
+import commercialPremisesPromotionRoutes from './routes/CommercialPremisesRoutes'
 
 dotenv.config()
 
@@ -15,7 +16,9 @@ app.use(express.json());
 
 //Routes
 app.use('/api/projects', projectRoutes );
-app.use('/api/housePromotions', housePromotionRouter );
-app.use('/api/apartmentPromotionRouter', apartmentPromotionRouter );
+app.use('/api/housePromotions', housePromotionRoutes );
+app.use('/api/apartmentPromotionRouter', apartmentPromotionRoutes );
+app.use('/api/commercialPremisesPromotionRouter', commercialPremisesPromotionRoutes );
+
 
 export default app;
