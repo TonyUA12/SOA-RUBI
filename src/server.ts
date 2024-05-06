@@ -5,7 +5,7 @@ import projectRoutes from './routes/projectRoutes'
 import housePromotionRoutes from './routes/housePromotionRoutes'
 import apartmentPromotionRoutes from './routes/apartmentPromotionRoutes'
 import commercialPremisesPromotionRoutes from './routes/CommercialPremisesRoutes'
-import officePromotionRoutes from './routes/OfficePromotionRoutes'
+import officePromotionRoutes from './routes/officePromotionRoutes'
 import landPromotionRoutes from './routes/landPromotionRoutes'
 dotenv.config()
 
